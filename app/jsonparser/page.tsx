@@ -1,5 +1,5 @@
 import React from 'react';
-import MonacoEditor from '@/app/public/MonacoEditor';
+import JsonEditor from '@/app/jsonparser/JsonEditor';
 
 const Page = () => {
     return (
@@ -7,7 +7,7 @@ const Page = () => {
             <div
                 className={ 'p-2 lg:p-20 h-full w-full' }
             >
-                <MonacoEditor defaultValue={ '{}' } language={ 'json' } />
+                <JsonEditor />
             </div>
         </>
     );

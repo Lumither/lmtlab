@@ -1,7 +1,6 @@
-'use client';
-
 import React from 'react';
 import ThemeSwitcher from '@/Components/ThemeSwitcher';
+import Link from 'next/link';
 
 const Header = () => {
 
@@ -13,9 +12,12 @@ const Header = () => {
 
                 <div className={ 'p-3 px-5' }>
                     <div className={ 'flex flex-row items-center justify-between align-baseline' }>
-                        <div className={ 'font-bold text-2xl' }>
+                        <Link
+                            className={ 'font-bold text-2xl' }
+                            href={ '/' }
+                        >
                             LMTLab
-                        </div>
+                        </Link>
                         <ThemeSwitcher />
                     </div>
                 </div>
