@@ -1,13 +1,7 @@
 import { Card, CardBody } from '@nextui-org/card';
 import Link from 'next/link';
+import { urlList } from '@/app/urlList';
 
-const urlList = [
-    {
-        name: 'Json Parser',
-        desc: 'Parse a Json file, with formatter and syntax highlighting',
-        url: '/jsonparser'
-    }
-];
 
 export default function Home() {
 
